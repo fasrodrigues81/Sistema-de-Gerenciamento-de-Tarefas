@@ -36,14 +36,12 @@ public class ProjetoServiceImpl implements ProjetoService {
 
     @Override
     public Projeto updateProjeto(Projeto projeto) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateProjeto'");
+        return projetoRepository.save(projeto);
     }
 
     @Override
     public void deleteProjeto(long projectId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteProjeto'");
+        projetoRepository.deleteById(projectId);
     }
 
 }
