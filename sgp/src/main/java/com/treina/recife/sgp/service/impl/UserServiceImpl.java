@@ -8,9 +8,9 @@ import org.springframework.data.domain.Pageable;
 
 import com.treina.recife.sgp.model.Usuario;
 import com.treina.recife.sgp.repository.UsuarioRepository;
-import com.treina.recife.sgp.service.UserService;
+import com.treina.recife.sgp.service.UsuarioService;
 
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UsuarioService {
 
     @Autowired
     UsuarioRepository usuarioRepository;
