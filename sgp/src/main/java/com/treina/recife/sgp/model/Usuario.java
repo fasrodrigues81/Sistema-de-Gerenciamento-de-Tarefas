@@ -49,7 +49,7 @@ public class Usuario implements Serializable {
     private String senha;
 
     @NotNull
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     @Column(name = "DATANASCIMENTO", nullable = false)
     private LocalDate dataNascimento;
 
