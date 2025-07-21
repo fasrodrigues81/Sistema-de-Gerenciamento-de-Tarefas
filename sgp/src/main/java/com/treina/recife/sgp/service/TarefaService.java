@@ -1,21 +1,26 @@
 package com.treina.recife.sgp.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import com.treina.recife.sgp.model.Projeto;
+import com.treina.recife.sgp.model.Tarefa;
 
 public interface TarefaService {
-    Page<Projeto> getProjetos(Pageable pageable);
 
-    Optional<Projeto> getProjetoById(long tarefaId);
+    Page<Tarefa> getTarefas(Pageable pageable);
 
-    Projeto creaTeProject(Projeto tarefa);
+    Optional<Tarefa> getTarefaById(long tarefaId);
 
-    Projeto updateProjeto(Projeto tarefa);
+    Tarefa creaTeTarefa(Tarefa tarefa);
 
-    void deleteProjeto(long tarefaId);
+    void deleteTarefaById(long tarefaId);
+
+    Tarefa updateTarefa(Tarefa tarefa);
+
+    List<Tarefa> findByProjetoProjectId(Projeto projectId);
 
 }
