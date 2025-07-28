@@ -10,11 +10,12 @@ import com.treina.recife.sgp.model.Usuario;
 
 public interface ProjetoService {
 
-    Page<Projeto> getProjetos(Pageable pageable);
+    Page<Projeto> getProjetos(
+            Pageable pageable);
 
     Optional<Projeto> getProjetoById(long projectId);
 
-    Projeto creaTeProject(Projeto projeto);
+    Projeto createProject(Projeto projeto);
 
     Projeto updateProjeto(Projeto projeto);
 
