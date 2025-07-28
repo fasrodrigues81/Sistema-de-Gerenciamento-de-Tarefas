@@ -5,11 +5,13 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import com.treina.recife.sgp.model.Usuario;
 import com.treina.recife.sgp.repository.UsuarioRepository;
 import com.treina.recife.sgp.service.UsuarioService;
 
+@Service
 public class UserServiceImpl implements UsuarioService {
 
     @Autowired
