@@ -30,7 +30,7 @@ public class ProjetoServiceImpl implements ProjetoService {
     }
 
     @Override
-    public Projeto creaTeProject(Projeto projeto) {
+    public Projeto createProject(Projeto projeto) {
         return projetoRepository.save(projeto);
     }
 
